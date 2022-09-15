@@ -1,0 +1,606 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#grilla {
+    width: 100vw;
+    height: 180vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "header header header"
+                         "main main main"
+                         "footer footer footer";
+    background-image: linear-gradient(196deg, rgba(148,153,175,1) 14%, rgba(131,77,110,1) 84%);
+        
+}
+
+/* ESTILOS DE HEADER */
+header {
+    grid-area: header;
+    width: 100vw;
+    height: 10vw;
+    background-color:  rgb(75, 75, 83);
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: .5fr 2fr .5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo btn bdr";
+}
+
+header nav div {
+    margin: 10px;
+    text-align: center;
+}
+
+header nav button {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 30px;
+    line-height: 60px;
+    margin-right: 20px;
+    display: none;
+}
+
+
+header nav div a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin-top: 10px;
+    font-family: 'DynaPuff', cursive;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nombre"
+                         "btn";       
+}
+
+a {
+    display:inline-block;
+    cursor: pointer;
+
+}
+#logoHeader{
+    grid-area: logo;
+}
+
+#botoneraHeader {
+    grid-area: btn;
+   
+}
+
+#buscador {
+    grid-area: bdr;
+}
+
+header nav div input {
+    width: 80%;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin-top: 60px;
+    font-family: 'DynaPuff', cursive;
+    background-color: white url(../assets/images/search-icon.png)
+    no-repeat 9px center;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all .5s;                     
+}
+
+ /* # TERMINAR DE DARLE FORMA input.bcr {} */
+
+#nombre {
+    grid-area: nombre;
+    font-family: 'DynaPuff', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.estiloLogo {
+    width: 15px;
+    height: 15px;
+    display: inline;
+    padding: 30px;
+    border-radius: 30%;
+    margin: 30px;
+    background-image: url(../assets/images/logo1.jpg);
+    background-size: cover;
+}
+
+
+/* ESTILOS DE MAIN */
+
+/* Inicio */
+#mainInicio {
+    flex-basis: 100%;
+    height: 140vh;
+    font-family: 'DynaPuff', cursive;
+    background-image: linear-gradient(196deg, rgba(148,153,175,1) 14%, rgba(131,77,110,1) 84%);
+    text-align: center;
+    grid-area: main;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#informacion {
+    width: 90%;
+    height: 200px;
+    margin: 15px;
+    padding: 5px;
+    font-family: 'DynaPuff', cursive;
+    text-align: center;
+    border: 3px solid blanchedalmond;
+    background-image: linear-gradient(196deg, rgba(148,153,175,1) 14%, rgba(131,77,110,1) 84%);
+    font-size: 1rem;
+}
+
+#destacado {
+    width: 80%;
+    height: 200px;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'DynaPuff', cursive;
+    border: 3px solid blanchedalmond;
+    background-image: linear-gradient(196deg, rgb(116, 120, 139) 14%, rgb(99, 61, 84) 84%);
+    font-size: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'DynaPuff', cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'DynaPuff', cursive;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    
+}
+
+.background-inicio {
+    width: 300px;
+    height: 300px;
+    padding: 40px;
+    margin-bottom: 20px;
+    background-image: url(https://altraducciones.com/sites/default/files/blog/medico.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Servicios */
+#mainServicios{
+    flex-basis: 100%;
+    height: 140vh;
+    font-family: 'DynaPuff', cursive;
+    background-image: linear-gradient(196deg, rgba(148,153,175,1) 14%, rgba(131,77,110,1) 84%);
+    text-align: center;
+    grid-area: main;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#srv-dst {
+    width: 100%;
+    height: 250px;
+    margin: 0px;
+    padding: 10px;
+    font-family: 'DynaPuff', cursive;
+    color: beige;
+    background: linear-gradient(28deg, rgba(2,0,36,1) 0%, rgba(55,8,69,1) 85%, rgba(0,212,255,1) 100%);
+
+}
+
+/* Profesionales */
+#mainProfesionales {
+    flex-basis: 100%;
+    height: 140vh;
+    font-family: 'DynaPuff', cursive;
+    background-image: linear-gradient(196deg, rgb(52, 39, 66) 14%, rgb(56, 26, 45) 84%);
+    text-align: center;
+    grid-area: main;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+#general {
+    width: 100%;
+    height: 200px;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'DynaPuff', cursive;
+    background-image: linear-gradient(196deg, rgb(87, 89, 97) 14%, rgb(104, 57, 84) 84%);
+
+}
+#areas {
+    width: 80%;
+    height: 100px;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'DynaPuff', cursive;
+    background-image: linear-gradient(196deg, rgb(116, 120, 139) 14%, rgb(99, 61, 84) 84%);
+
+}
+
+.info, .intro {
+    font-family: 'DynaPuff', cursive;
+    font-weight: bold;
+    text-align: center;
+}  
+
+#especifico {
+    width: 100%;
+    height: 325px;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'DynaPuff', cursive;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+#especifico .especialistas a {
+    width: 80%;
+    background-color:rgb(32, 20, 82);
+    border: 2px solid black;
+    color: beige;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+
+/* Galeria de imagenes */
+#mainGaleria {
+    flex-basis: 100%;
+    height: 140vh;
+    font-family: 'DynaPuff', cursive;
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 54%, rgba(55,8,69,1) 100%, rgba(0,212,255,1) 100%);
+    color:beige;
+    text-align: center;
+    grid-area: main;
+    
+}
+
+#background_galeria {
+    width: 90%;
+    height: 70vh;
+    margin: 40px;
+    padding: 80px;
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 54%, rgb(43, 12, 53) 100%, rgba(0,212,255,1) 100%);
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+.background_galeria_foto {
+    width: 20%;
+    height: 200px;
+    background-color: black;
+    color:bisque;
+    border: 2px solid white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Contacto */
+#mainContacto {
+    flex-basis: 100%;
+    height: 140vh;
+    font-family: 'DynaPuff', cursive;
+    background-image: radial-gradient(circle, rgba(2,0,36,1) 10%, rgba(2,0,36,1) 99%, rgba(55,8,69,1) 100%, rgba(0,212,255,1) 100%);
+    color: beige;
+    text-align: center;
+    grid-area: main;
+    font-weight: normal;
+}
+
+.letras {
+    flex-basis: 15em;
+    height: 300px;
+    margin: 15px;
+    margin: 0auto;
+    padding: 5px;
+    font-family: 'DynaPuff', cursive;
+    text-align: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
+}
+
+
+/* ESTILOS DE FOOTER */
+
+footer {
+    grid-area: footer;
+    display: grid;
+    flex-basis: 100%;
+    height: 30vh;
+    background-color: black;
+    font-family: 'DynaPuff', cursive;
+
+}
+
+footer nav {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logof rrss cto";
+    align-items: center;
+    justify-items: center;
+}
+
+#rrss {
+    grid-area: rrss;
+}
+
+footer .logo {
+    width: 40px;
+    height: 40px;
+    margin: 10px;   
+}
+
+#logoFooter {
+    grid-area: logof;
+}
+
+#contacto {
+    grid-area: cto;
+}
+
+@media only screen and (max-width:1200px) {
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 25px;  
+    }
+    
+    .background-inicio {
+        width: 200px;
+        height: 200px;
+    }
+    .estiloLogo {
+        width: 15px;
+        height: 5px;
+        display:inline;
+        padding: 30px;
+        margin: 10px;
+    }
+    
+    #srv-dst {
+        width: 100%;
+        height: 158px;
+        margin: 0px;
+        padding: 10px;
+        font-family: 'DynaPuff', cursive;
+        color: beige;
+        background: linear-gradient(28deg, rgba(2,0,36,1) 0%, rgba(55,8,69,1) 85%, rgba(0,212,255,1) 100%);
+    }
+
+    h1 {
+        font-size: 25px;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+    
+    #srv-dst {
+    width: 100%;
+    height: 123px;
+    }
+    
+    #general {
+        width: 90%;
+        height: 150px;
+        font-size: 13px;
+    }
+
+    #areas {
+        width: 70%;
+        height: 100px;
+        font-size: 15px;
+    }
+    
+    #especifico {
+        width: 90%;
+        height: 250px;
+    }
+    
+    #especifico .especialistas a {
+        width: 80%;
+        font-size: 20px; 
+    }
+    
+
+}
+
+@media only screen and (max-width:768px) {
+    
+    #grilla {
+        width: 100%;
+        height: 180vh;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        grid-template-areas: none;
+    }    
+    
+    header {
+        width: 100%;
+        height: 13vh;
+        background-color:  rgb(85, 85, 89);
+    }
+    
+    header nav {
+        display: flex;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        grid-template-areas: none;
+    }
+    header nav div {
+        margin: 0px;
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+        align-items:center;
+        align-content: center;   
+    }
+    
+    header nav div a {
+        text-decoration: none;
+        color: black;
+        padding: 0;
+        background-color: rgb(68, 63, 63);
+        border: 2px solid rgb(86, 84, 84);
+        border-radius: 5px;
+        font-size: 13px;
+
+
+        grid-template-columns: none;
+        grid-template-rows: none;
+        grid-template-areas: none;       
+    }
+    
+
+    header nav div input {
+        display: none;                  
+    }
+    
+    #nombre {
+        grid-area: nombre;
+        font-family: 'DynaPuff', cursive;
+        font-size: 20px;
+    }
+    
+    .estiloLogo {
+        width: 15px;
+        height: 5px;
+        display:inline;
+        padding: 25px;
+        margin: 0 30px;
+    }
+    
+    
+    #informacion {
+        width: 80%;
+        border: 3px solid rgb(46, 44, 42);
+        background-image: linear-gradient(196deg, rgb(116, 120, 139) 14%, rgb(99, 61, 84) 84%);
+        font-size: 13px;
+    }
+    
+    #destacado {
+        width: 70%;
+        border: 3px solid rgb(46, 44, 42);
+        background-image: linear-gradient(196deg, rgb(116, 120, 139) 14%, rgb(99, 61, 84) 84%);
+        font-size: 13px;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 20px;  
+    }
+    
+    .background-inicio {
+        width: 150px;
+        height: 150px;
+    }
+
+    #srv-dst {
+        width: 100%;
+        height: 50px;
+        margin: 0px;
+        padding: 10px;
+        font-family: 'DynaPuff', cursive;
+        color: beige;
+        background: linear-gradient(28deg, rgba(2,0,36,1) 0%, rgba(55,8,69,1) 85%, rgba(0,212,255,1) 100%);
+    }
+
+    #general {
+        width: 90%;
+        height: 180px;
+        font-size: 12px;
+    }
+
+    #areas {
+        width: 80%;
+        height: 100px;
+        font-size: 12px;
+    }
+    
+    .info, .intro {
+        font-family: 'DynaPuff', cursive;
+        font-weight: bold;
+        text-align: center;
+    }  
+    
+    #especifico {
+        width: 90%;
+        height: 250px;
+    }
+    
+    #especifico .especialistas a {
+        width: 80%;
+        font-size: 20px;
+    }
+    
+    #background_galeria {
+        width: 80%;
+        height: 60vh;
+        margin: 20px;
+        padding: 60px;
+    }
+    
+    .background_galeria_foto {
+        width: 20%;
+        height: 200px;
+        background-color: black;
+        color:bisque;
+        border: 2px solid white;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .letras {
+        width: 80%;
+        height: 250px;
+    }
+
+
+    footer {
+        flex-basis: 100%;
+        height: 27vh;
+    }
+}
