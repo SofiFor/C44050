@@ -14,7 +14,41 @@
                          "main main main"
                          "footer footer footer";
     background-image: linear-gradient(196deg, rgba(148,153,175,1) 14%, rgba(131,77,110,1) 84%);
+    animation-name: animacion_grilla;
+    animation-duration: 15s;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: forwards;
         
+}
+
+@keyframes animacion_grilla {
+    0% {
+        width: 0vw;
+        height: 0vh;
+    }
+
+    25% {
+        width: 25vw;
+        height: 25vh;
+        background-image: linear-gradient(196deg, rgba(148,153,175,1) 14%, rgba(131,77,110,1) 84%);
+    }
+
+    50% {
+        width: 50vw;
+        height: 50vh;
+    }
+
+    75% {
+        width: 75vw;
+        height: 75vh;
+        background-image: linear-gradient(196deg, rgba(148,153,175,1) 14%, rgb(165, 103, 142) 84%);
+    }
+
+    100% {
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(196deg, rgba(148,153,175,1) 14%, rgb(102, 68, 89) 84%);
+    }
 }
 
 /* ESTILOS DE HEADER */
@@ -346,7 +380,29 @@ footer {
     height: 30vh;
     background-color: black;
     font-family: 'DynaPuff', cursive;
+    animation-name: animacion_grilla;
+    animation-duration: 15s;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: forwards;
+}
 
+@keyframes animacion_footer {
+    0% {
+        width: 0vw;
+        height: 0vh;
+    }
+
+    50% {
+        width: 50vw;
+        height: 50vh;
+        background-color: rgb(37, 34, 34);
+    }
+
+    100% {
+        width: 100vw;
+        height: 100vh;
+        background-color:black;
+    }
 }
 
 footer nav {
