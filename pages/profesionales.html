@@ -7,71 +7,102 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Profesionales</title>
 </head>
-<body id="grilla">
-    <header>
-        <nav>
-            <div id="logoHeader"><img src="../assets/images/logo1.jpg" alt="Logo" class="estiloLogo"></div>
-            <div id="botoneraHeader">
-                <div id="nombre">Centro Integral de Rehabilitacion</div>
-                <a href="../index.html">Inicio</a>
-                <a href="./servicios.html">Servicios</a>
-                <a href="./profesionales.html">Profesionales</a>
-                <a href="./galeria_de_imagenes.html">Galeria</a>
-                <a href="./contactos.html">Contacto</a>
-            </div>
-            <div id="buscador">
-                <input type="text" placeholder="Buscar" class="bcr" autocomplete="off">
-            </div>
-        </nav>   
-    
+<body>
 
+    <header class="container-fluid">
+        <div class="row bg-success text-center" id="header">
+
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" id="headerNav">
+                    <div class="container-fluid">
+                      <a class="navbar-brand rounded-circle" href="#">C.i.Re.</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                          <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./profesionales.html">Profesionales</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./galeria_de_imagenes.html">Galeria</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./contactos.html" tabindex="-1" aria-disabled="true">Contacto</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>    
+            </div>
+        </div>
     </header>
-    <!-- CIERRE LOGO + NAV -->
 
-    <main id="mainProfesionales">
+    <main class="mainProfesionales">
 
-        <h1>PROFESIONALES</h1>
-        <section id="general">
-            <div class="info">¿QUIENES SOMOS?</div>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel unde molestias adipisci, perspiciatis numquam facere maiores est impedit? Quaerat dignissimos natus assumenda placeat! Omnis ullam enim provident consequuntur fugit earum! Fugit et ex, 
-                libero doloremque quisquam minima iste debitis dolorum tempore quae adipisci doloribus mollitia sapiente facere expedita harum inventore.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis ab deleniti numquam eaque 
-                voluptatum blanditiis repellendus maxime dolores ipsa voluptatem.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel unde molestias adipisci, perspiciatis numquam facere maiores est impedit? Quaerat dignissimos natus assumenda placeat! Omnis ullam enim provident consequuntur fugit earum! Fugit et ex, 
-                libero doloremque quisquam minima iste debitis dolorum tempore quae adipisci doloribus mollitia sapiente facere expedita harum inventore.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis ab deleniti numquam eaque 
-            </p>  
-            
-        </section>
+        <main class="container-fluid">
+            <div class="row" id="mainGeneral">
+            <section class="col-12 col-sm-12 col-md-12 col-lg-12 ol-xl-12 col-xxl-12 d-flex flex-column justify-content-center align-items-center text-center "> 
+                <h1 class="display-6">PROFESIONALES</h1>
+                <p class="h6">¿QUIENES SOMOS?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vero molestiae explicabo odio quos asperiores commodi
+                    impedit exercitationem cum eum laborum fugit numquam sequi earum nesciunt iusto, aliquam culpa recusandae consequatur. 
+                    Similique delectus itaque repudiandae, sed maxime animi autem et numquam consectetur ex nisi nulla hic iure quos vel molestias??
+                    mpedit exercitationem cum eum laborum fugit numquam sequi earum nesciunt iusto, aliquam culpa recusandae consequatur. 
+                    Similique delectus itaque repudiandae, sed maxime animi autem et numquam consectetur ex nisi nulla hic iure quos vel molestias?
+                </p>
+            </section>
+            </div>
 
-        <section id="areas">
-            <div class="intro">AREAS-ESPECIALISTAS</div>
+            <div class="row" id="mainAreas">
+            <section class="col-12 col-sm-12 col-md-12 col-lg-12 ol-xl-12 col-xxl-12 d-flex flex-column justify-content-center align-items-center text-center "> 
+                <h2 class="dispay-6">AREAS-ESPECIALISTAS</h2>
                 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis 
                 temporibus consequuntur recusandae, minus nostrum a sint laudantium aspernatur voluptatem omnis, 
                 in, nemo harum similique praesentium obcaecati culpa corporis dolores neque.</P>
-        </section>
-        
-        <section id="especifico">
-            <div class="especialistas">
-            <a href="#">KINESIOLOGIA</a>
-            <a href="#">PSICOLOGIA</a>
-            <a href="#">PSICOPEDAGOGIA</a>
-            <a href="#">TERAPISTA OCUPASIONAL</a>
-            <a href="#">NUTRICIONSTA</a>
-        </div>
+            </section>
+            </div>
+
+            <div class="row" id="mainEspecialistas">
+            <section class= "col-12 col-sm-12 col-md-12 col-lg-12 ol-xl-12 col-xxl-12">
+                <div class="d-grid gap-2" id="botones">
+                    <button class="btn btn-primary" type="button">KINESIOLOGIA</button>
+                    <button class="btn btn-primary" type="button">PSICOLOGIA</button>
+                    <button class="btn btn-primary" type="button">PSICOPEDAGOGIA</button>
+                    <button class="btn btn-primary" type="button">TERAPISTA OCUPASIONAL</button>
+                    <button class="btn btn-primary" type="button">NUTRICIONSTA</button>
+                    <button class="btn btn-primary" type="button">FONOAUDIOLOGIA</button>
+                  </div>
+            </section>
+            </div>
             
-        </section>
+        
 
     </main>
 
-    <!-- INICIO DE FOOTER--> 
-    <footer>
-        <nav>
-            <div id="logoFooter"><img src="../assets/images/logo1.jpg" alt="Logo" class="estiloLogo"></div>
-            <div id="rrss"><a href="#">RRSS</a></div>
-            <div id="contacto"><a href="#">CONTACTO</a></div>
-        </nav>
+
+    <footer class="continer-fluid">
+        <div class="row bg-dark" id="footer">
+        
+            <div class="col-4" id="logoFooter"><img src="#" alt="Logo" class="estiloLogo"></div>
+            <div Class="col-4" id="rrss"><a href="#">RRSS</a></div>
+            <div Class="col-4" id="contacto"><a href="#">CONTACTO</a></div>
+        </div>
     </footer>
 
 </body>
