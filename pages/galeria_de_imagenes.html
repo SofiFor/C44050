@@ -7,55 +7,123 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>galeria_de_imagenes</title>
 </head>
-<body id="grilla">
-    <header>
-        <nav>
-            <div id="logoHeader"><img src="../assets/images/logo1.jpg" alt="Logo" class="estiloLogo"></div>
-            <div id="botoneraHeader">
-                <div id="nombre">Centro Integral de Rehabilitacion</div>
-                <a href="../index.html">Inicio</a>
-                <a href="./servicios.html">Servicios</a>
-                <a href="./profesionales.html">Profesionales</a>
-                <a href="./galeria_de_imagenes.html">Galeria</a>
-                <a href="./contactos.html">Contacto</a>
-            </div>
-            <div id="buscador">
-                <input type="text" placeholder="Buscar" class="bcr" autocomplete="off">
-            </div>
-        </nav>   
-    
+<body>
 
-    </header>
-    <!-- CIERRE LOGO + NAV -->
+  <header class="container-fluid">
+    <div class="row bg-success text-center" id="header">
 
-    <main id="mainGaleria">
-        <h1>GALERIA</h1>
-        <section id="background_galeria">
-            <div class="background_galeria_foto">1</div>  
-            <div class="background_galeria_foto">2</div>  
-            <div class="background_galeria_foto">3</div>  
-            <div class="background_galeria_foto">4</div>  
-            <div class="background_galeria_foto">5</div>  
-            <div class="background_galeria_foto">6</div>  
-            <div class="background_galeria_foto">7</div>  
-            <div class="background_galeria_foto">8</div>  
-            <div class="background_galeria_foto">9</div>  
-            <div class="background_galeria_foto">10</div>  
+        <div class="col-2"></div>
+        <div class="col-10">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="headerNav">
+                <div class="container-fluid">
+                  <a class="navbar-brand rounded-circle" href="#">C.i.Re</a>
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> 
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./profesionales.html">Profesionales</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./galeria_de_imagenes.html">Galeria</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contactos.html" tabindex="-1" aria-disabled="true">Contacto</a>
+                      </li>
+                    </ul>
+                    
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+
+                  </div>
+                </div>
+              </nav>    
+        </div>
+    </div>
+</header>
+
+    <main class="container-fluid">
+
+      <div class="row" id="mainGaleria">
+        <section class="col-12 col-sm-12 col-md-12 col-lg-12 ol-xl-12 col-xxl-12 d-flex flex-column justify-content-center align-items-center text-center "> 
+          <h1 class="display-6">Galeria</h1>
+          <p class="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vero molestiae explicabo odio quos asperiores commodi
+              impedit exercitationem cum eum laborum fugit numquam sequi earum nesciunt iusto, aliquam culpa recusandae consequatur.  
+          </p>
         </section>
+      </div>
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="../assets/images/2.jfif" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../assets/images/3.jfif" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/4.jfif"class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
     </main>
 
-    <!-- INICIO DE FOOTER--> 
-    <footer>
-        <nav>
-            <div id="logoFooter"><img src="../assets/images/logo1.jpg" alt="Logo" class="estiloLogo"></div>
-            <div id="rrss"><a href="#">RRSS</a></div>
-            <div id="contacto"><a href="#">CONTACTO</a></div>
-        </nav>
+
+    <footer class="continer-fluid">
+        <div class="row bg-dark" id="footer">
+        
+            <div class="col-4" id="logoFooter"><img src="#" alt="Logo" class="estiloLogo"></div>
+            <div Class="col-4" id="rrss"><a href="#">RRSS</a></div>
+            <div Class="col-4" id="contacto"><a href="#">CONTACTO</a></div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
 </body>
 </html>
