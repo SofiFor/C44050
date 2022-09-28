@@ -1,0 +1,64 @@
+body {
+  width: 100vw;
+  height: 180vh;
+}
+body header {
+  height: 15vh;
+  background-color: rgb(75, 75, 83) !important;
+}
+body main {
+  height: 145vh;
+  background-image: linear-gradient(196deg, rgb(148, 153, 175) 14%, rgb(131, 77, 110) 84%);
+  font-family: "DynaPuff", cursive;
+}
+body footer {
+  height: 20vh;
+}
+
+#header {
+  height: 15vh;
+  background-color: rgb(75, 75, 83) !important;
+  font-family: "DynaPuff", cursive;
+}
+#header #headerNav {
+  background-color: rgb(75, 75, 83) !important;
+  border-radius: 2px solid black;
+}
+#header #headerNav .navbar-brand {
+  font-size: 22px;
+  font-weight: bold;
+}
+#header #headerNav .nav-link {
+  color: black !important;
+  font-size: 22px;
+}
+
+.main {
+  background-image: "gradiente-1";
+  font-family: "DynaPuff", cursive;
+}
+.main #mainInformacion {
+  height: 80vh;
+  background-image: "gradiente-2";
+  padding: 20px;
+}
+.main #carouselExampleIndicators {
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main #mainDestacado {
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+  background-image: linear-gradient(196deg, rgb(116, 120, 139) 14%, rgb(99, 61, 84) 84%);
+  padding: 20px;
+}
+
+#footer {
+  height: 20vh;
+}

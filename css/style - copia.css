@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 300vh;
+}
+
+/* ESTILOS HEADER */
+#header {
+    height: 15vh;
+    background-color:  rgb(75, 75, 83) !important;
+    font-family: 'DynaPuff', cursive;
+}
+
+
+.nav-link {
+    color: black !important;
+}
+
+#headerNav {
+    background-color:  rgb(75, 75, 83) !important;
+}
+
+
+/* ESTILOS MAIN */
+main {
+    height: 265vh;
+    background-image: linear-gradient(196deg, rgba(148,153,175,1) 14%, rgba(131,77,110,1) 84%);
+    font-family: 'DynaPuff', cursive;
+}
+
+#mainInformacion, #mainGeneral {
+    height: 80vh;
+    background-image: linear-gradient(196deg, rgb(116, 120, 139) 14%, rgb(99, 61, 84) 84%);
+}
+
+#mainDestacado {
+    height: 70vh;
+    width: 80%;
+    margin: auto;
+    background-image: linear-gradient(196deg, rgb(116, 120, 139) 14%, rgb(99, 61, 84) 84%)
+}
+
+#carouselExampleIndicators {
+    height: 105vh;
+}
+
+.mainImagen {
+    height: 100vh;
+    padding: 70px;
+    margin: 50px;
+}
+
+#mainServicio {
+    height: 40vh;
+}
+
+#mainSrv {
+    height: 75vh;
+    background-image: linear-gradient(196deg, rgb(116, 120, 139) 14%, rgb(99, 61, 84) 84%)
+}
+
+#mainAreas {
+    height: 30vh;
+}
+
+#mainEspecialistas {
+    height: 45vh;
+}
+ .botones {
+    color: blanchedalmond;
+ }
+
+ #mainGaleria, #mainContacto {
+    height: 40vh ;
+ }
+
+
+
+
+
+/* ESTILOS FOOTER */
+#footer {
+    height: 20vh;
+}
+
+
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (orientation: portrait) {  
+
+}
+
+@media (min-width: 576px) and (orientation: landscape) { 
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+}

@@ -1,0 +1,26 @@
+#header {
+    height: 15vh;
+    background-color:   rgb(75, 75, 83) !important;
+    font-family: 'DynaPuff', cursive;
+
+        #headerNav { 
+            background-color:  rgb(75, 75, 83) !important; 
+            border-radius: 2px solid black;
+
+            .navbar-brand {
+                font-size: $font-header + 2;
+                font-weight: bold;
+            }
+            
+        .nav-link {
+                color: black !important;
+                font-size: $font-header + 2;
+                
+            
+        }
+        
+    }
+}
+
+
+

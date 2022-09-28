@@ -1,0 +1,13 @@
+$ancho: 100%;
+
+$alto-header: 15vh;
+$alto-main: 265vh;
+$alto-footer: 20vh;
+
+$font-header: 20px;
+
+$colores-gradientes: (
+    "gradiente-1": linear-gradient(196deg, rgba(148,153,175,1) 14%, rgba(131,77,110,1) 84%),
+    "gradiente-2": linear-gradient(196deg, rgb(116, 120, 139) 14%, rgb(99, 61, 84) 84%),
+    "gradiente-3": linear-gradient(263deg, rgba(73,69,148,0.9416141456582633) 4%, rgba(9,9,121,1) 79%, rgba(0,212,255,1) 100%),  
+)

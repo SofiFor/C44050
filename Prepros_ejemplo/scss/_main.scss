@@ -1,0 +1,33 @@
+.main {
+    background-image: "gradiente-1";
+    font-family: 'DynaPuff', cursive;
+
+    #mainInformacion {
+        height: 80vh;
+        background-image: "gradiente-2";
+        padding: 20px;
+    }
+
+    #carouselExampleIndicators {
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mainDestacado {
+        height: 100vh;
+        width: 80%;
+        margin: auto;
+        background-image: linear-gradient(196deg, rgb(116, 120, 139) 14%, rgb(99, 61, 84) 84%);
+        padding: 20px;
+    }
+}
+    
+
+
+
+
+
+    
+
+
