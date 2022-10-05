@@ -1,17 +1,28 @@
+.atencion {
+  color: green;
+}
+
+.servicios {
+  color: yellow;
+}
+
 body {
   width: 100vw;
   height: 180vh;
 }
 body header {
+  width: 100%;
   height: 15vh;
   background-color: rgb(75, 75, 83) !important;
 }
 body main {
+  width: 100%;
   height: 145vh;
   background-image: linear-gradient(196deg, rgb(148, 153, 175) 14%, rgb(131, 77, 110) 84%);
   font-family: "DynaPuff", cursive;
 }
 body footer {
+  width: 100%;
   height: 20vh;
 }
 
@@ -33,25 +44,21 @@ body footer {
   font-size: 22px;
 }
 
-.main {
-  background-image: "gradiente-1";
+.main #inicio {
+  background-color: linear-gradient(196deg, rgb(148, 153, 175) 14%, rgb(131, 77, 110) 84%);
   font-family: "DynaPuff", cursive;
 }
-.main #mainInformacion {
+.main #inicio #mainInformacion, .main #inicio #profesionales #mainGeneral, .main #profesionales #inicio #mainGeneral {
   height: 80vh;
-  background-image: "gradiente-2";
+  background-color: "gradiente-2";
   padding: 20px;
 }
-.main #carouselExampleIndicators {
+.main #inicio #carouselExampleIndicators {
   height: 100vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-.main #mainDestacado {
+.main #inicio #mainDestacado, .main #inicio #servicios #mainDestacados, .main #servicios #inicio #mainDestacados {
   height: 100vh;
   width: 80%;
   margin: auto;
@@ -59,6 +66,50 @@ body footer {
   padding: 20px;
 }
 
+.main #servicios #mainServicio {
+  height: 40vh;
+}
+.main #servicios #mainDestacados {
+  background-color: linear-gradient(196deg, rgb(116, 120, 139) 14%, rgb(86, 54, 73) 84%);
+}
+.main #servicios #mainSrv {
+  height: 75vh;
+  background-color: linear-gradient(196deg, rgb(116, 120, 139) 14%, rgb(99, 61, 84) 84%);
+}
+
+.main #profesionales #mainGeneral {
+  background-color: "gradiente-1";
+}
+.main #profesionales #mainAreas {
+  height: 30vh;
+}
+
+.main #imagenes #mainGaleria {
+  height: 40vh;
+}
+
+.main #contacto #mainContacto {
+  height: 40vh;
+}
+
 #footer {
   height: 20vh;
 }
+
+@media only screen and (max-width: 1024px) {
+  body {
+    background-color: rgb(91, 89, 89);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-color: rgb(98, 93, 93);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    background-color: rgb(55, 39, 39);
+  }
+}/*# sourceMappingURL=style.css.map */

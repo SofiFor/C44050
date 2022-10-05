@@ -3,17 +3,20 @@ body {
     height: 180vh;
 
     header {
+        width: $ancho;
         height: 15vh;
         background-color:   rgb(75, 75, 83) !important;
     }
 
     main {
+        width: $ancho;
         height: 145vh;
         background-image: linear-gradient(196deg, rgba(148,153,175,1) 14%, rgba(131,77,110,1) 84%);
         font-family: 'DynaPuff', cursive;
     }
 
     footer {
+        width: $ancho;
         height: 20vh
     }
 }

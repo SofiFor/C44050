@@ -1,0 +1,54 @@
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin estiloGeneral {
+    height: 15vh;
+    background-color:   rgb(75, 75, 83) !important;
+    font-family: 'DynaPuff', cursive;
+
+    #headerNav {
+        background-color:  rgb(75, 75, 83) !important; 
+        border-radius: 2px solid black;  
+
+           .navbar-brand {
+            font-size: $font-header + 2;
+            font-weight: bold; 
+           }
+
+    .nav-link {
+        color: black !important;
+        font-size: $font-header + 2; 
+    }
+
+    }
+}
+
+@mixin background-query($background,$vista) {
+    body {
+        @if $vista == desktop {
+            @media only screen and (max-width:1024px) {
+                background-color:$background;
+            }
+        }
+
+        @else if $vista == tablet {
+            @media only screen and (max-width:767px) {
+                background-color:$background;
+            }
+        }
+
+        @else if $vista == mobile {
+            @media only screen and (max-width:576px) {
+                background-color:$background;
+            }
+        }
+
+        @else {
+                background-color:$background;
+            }
+        
+    }
+}
+    

@@ -1,0 +1,10 @@
+$colores:(
+    atencion: green,
+    servicios: yellow,
+);
+
+@each $nombre, $color in $colores {
+    .#{$nombre}{
+        color: $color;
+    }
+}

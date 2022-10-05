@@ -1,10 +1,10 @@
-.main {
-    background-image: "gradiente-1";
+.main #inicio{
+    background-color: map-get($colores-gradientes, "gradiente-1") ;
     font-family: 'DynaPuff', cursive;
 
     #mainInformacion {
         height: 80vh;
-        background-image: "gradiente-2";
+        background-color:"gradiente-2";
         padding: 20px;
     }
 
@@ -23,8 +23,47 @@
     }
 }
     
+.main #servicios{
+   
+    #mainServicio {
+        height: 40vh;
+    }
 
+    #mainDestacados {
+        @extend #mainDestacado ;
+        background-color: linear-gradient(196deg, rgb(116, 120, 139) 14%, rgb(86, 54, 73) 84%);
+    }
 
+    #mainSrv {
+        height: 75vh;
+        background-color: linear-gradient(196deg, rgb(116, 120, 139) 14%, rgb(99, 61, 84) 84%)
+    }
+}
+  
+.main #profesionales {
+   
+    #mainGeneral {
+        @extend #mainInformacion ;
+        background-color: "gradiente-1" ;
+    }
+
+    #mainAreas {
+        height: 30vh;
+    }
+
+}
+  
+.main #imagenes {
+    #mainGaleria {
+        height: 40vh ;
+    }
+}
+
+.main #contacto {
+    #mainContacto {
+        height: 40vh ;
+    }
+}
 
 
 

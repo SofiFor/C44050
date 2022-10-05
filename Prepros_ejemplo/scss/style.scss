@@ -1,4 +1,7 @@
+@import './each';
+@import './mixins';
 @import './variables';
+
 
 @import './body';
 @import './header';
@@ -7,6 +10,8 @@
 
 
 
-
+@include background-query (rgb(91, 89, 89), desktop);
+@include background-query (rgb(98, 93, 93), tablet);
+@include background-query (rgb(55, 39, 39), mobile);
 
 
