@@ -1,14 +1,10 @@
 .atencion {
-  color: green;
-}
-
-.servicios {
-  color: yellow;
+  color: rgb(48, 57, 48);
 }
 
 body {
   width: 100vw;
-  height: 180vh;
+  height: 200vh;
 }
 body header {
   width: 100%;
@@ -17,8 +13,9 @@ body header {
 }
 body main {
   width: 100%;
-  height: 145vh;
-  background-image: linear-gradient(196deg, rgb(148, 153, 175) 14%, rgb(131, 77, 110) 84%);
+  height: 165vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(2, 0, 36)), color-stop(99%, rgb(212, 212, 223)), color-stop(100%, rgb(148, 155, 157)), to(rgb(55, 8, 69)));
+  background-image: linear-gradient(180deg, rgb(2, 0, 36) 0%, rgb(212, 212, 223) 99%, rgb(148, 155, 157) 100%, rgb(55, 8, 69) 100%);
   font-family: "DynaPuff", cursive;
 }
 body footer {
@@ -45,24 +42,16 @@ body footer {
 }
 
 .main #inicio {
-  background-color: linear-gradient(196deg, rgb(148, 153, 175) 14%, rgb(131, 77, 110) 84%);
+  background-color: linear-gradient(180deg, rgb(2, 0, 36) 0%, rgb(212, 212, 223) 99%, rgb(148, 155, 157) 100%, rgb(55, 8, 69) 100%);
   font-family: "DynaPuff", cursive;
 }
 .main #inicio #mainInformacion, .main #inicio #profesionales #mainGeneral, .main #profesionales #inicio #mainGeneral {
-  height: 80vh;
-  background-color: "gradiente-2";
-  padding: 20px;
-}
-.main #inicio #carouselExampleIndicators {
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+  padding: 40px;
+  margin: 30px;
 }
 .main #inicio #mainDestacado, .main #inicio #servicios #mainDestacados, .main #servicios #inicio #mainDestacados {
-  height: 100vh;
+  height: 80vh;
   width: 80%;
-  margin: auto;
-  background-image: linear-gradient(196deg, rgb(116, 120, 139) 14%, rgb(99, 61, 84) 84%);
   padding: 20px;
 }
 
@@ -112,4 +101,4 @@ body footer {
   body {
     background-color: rgb(55, 39, 39);
   }
-}/*# sourceMappingURL=style.css.map */
+}

@@ -1,6 +1,5 @@
 $colores:(
-    atencion: green,
-    servicios: yellow,
+    atencion: rgb(48, 57, 48),
 );
 
 @each $nombre, $color in $colores {

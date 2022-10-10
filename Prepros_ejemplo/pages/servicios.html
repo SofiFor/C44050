@@ -45,7 +45,7 @@
                         <a class="nav-link" aria-current="page" href="./profesionales.html">Profesionales</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./galeria_de_imagenes.html">Galeria</a>
+                        <a class="nav-link" aria-current="page" href="./galeria_de_imagenes.html">Pacientes</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="./contactos.html" tabindex="-1" aria-disabled="true">Contacto</a>
@@ -65,41 +65,62 @@
  </header>
 
   <main class="container-fluid" id="servicios">
-            <div class="row" id="mainServicios">
-                <section class="col-12 col-sm-12 col-md-12 col-lg-12 ol-xl-12 col-xxl-12 d-flex flex-column justify-content-center align-items-center text-center "> 
+
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active">Inicio</li>
+        <li class="breadcrumb-item" aria-current="page">Servicios</li>
+        <li class="breadcrumb-item active" aria-current="page">Proesionales</li>
+        <li class="breadcrumb-item active" aria-current="page">Galería</li>
+        <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+      </ol>
+    </nav>
+
+  <div class="container-fluid">
+    <div class="row" id="mainServicios">
+        <section class="d-flex flex-column justify-content-center align-items-center text-center "> 
                   <h1 class="display-6">SERVICIOS</h1>
                   <div class="video"> 
                       <iframe width="560" height="315" src="https://www.youtube.com/embed/zDxeuvFvijc" 
                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                        allowfullscreen>
                   </div>
-                </section>
-            </div>
+        </section>
+    </div>
+  </div>
 
-            <div class="row" id="mainDestacados">
-                <section class="col-12 col-sm-12 col-md-12 col-lg-12 ol-xl-12 col-xxl-12 d-flex flex-column justify-content-center align-items-center text-center "> 
-                   <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vero molestiae explicabo odio quos asperiores commodi
-                                 impedit exercitationem cum eum laborum fugit numquam sequi earum nesciunt iusto, aliquam culpa recusandae consequatur. 
-                                 Similique delectus itaque repudiandae, sed maxime animi autem et numquam consectetur ex nisi nulla hic iure quos vel molestias??
-                                 mpedit exercitationem cum eum laborum fugit numquam sequi earum nesciunt iusto, aliquam culpa recusandae consequatur. 
-                                 Similique delectus itaque repudiandae, sed maxime animi autem et numquam consectetur ex nisi nulla hic iure quos vel molestias?
-                   </p>
-                </section>
-            </div>
-        
-        <div class="row" id="mainSrv">
-            <section class="col-12 col-sm-12 col-md-12 col-lg-12 ol-xl-12 col-xxl-12 d-flex flex-column justify-content-center align-items-center text-center "> 
-            <h2>OPINIONES DE PACIENTES</h2>
-            <p><em> "Lorem ipsum dolor sit amet consectetur adipisicing elit"
-                             "Doloremque vero molestiae explicabo odio quos asperiores commodi"
-                "impedit exercitationem cum eum laborum fugit numquam sequi earum nesciunt iusto, aliquam culpa recusandae consequatur."</em>
-            </p>
-            </section>
-        </div>  
-    </main>
+  <div class="container-fluid">
+    <div class="row" id="mainDestacados">
+     
+      <div class="row">
+        <div class="col-4">
+          <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+            <h4 id="list-item-1">Item 1</h4>
+            <p>...</p>
+            <h4 id="list-item-2">Item 2</h4>
+            <p>...</p>
+            <h4 id="list-item-3">Item 3</h4>
+            <p>...</p>
+            <h4 id="list-item-4">Item 4</h4>
+            <p>...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</main>
    
 
-    <footer class="continer-fluid">
+  <footer class="continer-fluid">
         <div class="row bg-dark" id="footer">
         
             <div class="col-4" id="logoFooter"><img src="#" alt="Logo" class="estiloLogo"></div>
@@ -107,7 +128,7 @@
             <div Class="col-4" id="contacto"><a href="#">CONTACTO</a></div>
             
         </div>
-    </footer>
+  </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 

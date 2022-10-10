@@ -43,7 +43,7 @@
                             <a class="nav-link" aria-current="page" href="./profesionales.html">Profesionales</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./galeria_de_imagenes.html">Galeria</a>
+                            <a class="nav-link" aria-current="page" href="./galeria_de_imagenes.html">Pacientes</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link active" href="./contactos.html" tabindex="-1" aria-disabled="true">Contacto</a>
@@ -63,106 +63,117 @@
     </header>
     
 <main class="container-fluid">
-            <div class="row" id="mainContacto">
-            <section class="col-12 col-sm-12 col-md-12 col-lg-12 ol-xl-12 col-xxl-12 d-flex flex-column justify-content-center align-items-center text-center "> 
-                <h1 class="display-6">CONTACTO</h1>
-            </section>
+
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active">Inicio</li>
+          <li class="breadcrumb-item active" aria-current="page">Servicios</li>
+          <li class="breadcrumb-item  active" aria-current="page">Proesionales</li>
+          <li class="breadcrumb-item active" aria-current="page">Galería</li>
+          <li class="breadcrumb-item" aria-current="page">Contacto</li>
+        </ol>
+      </nav>
+
+      <div class="container">
+
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationCustom01" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
             </div>
 
-            <div class="row" id="mainFormulario">
-            <section class="col-12 col-sm-12 col-md-12 col-lg-12 ol-xl-12 col-xxl-12 d-flex flex-column justify-content-center align-items-center text-center "></section>
-
-                    <form action="" method="post">
-        
-                        <div class="letras"> 
-                            <fieldset>
-                                <legend class="datos-personales">DATOS PERSONALES</legend>
-        
-                                <div>
-                                    <label for="Nombre y Apellido">Nombre y apellido:</label>
-                                    <input type="text" id="Nombre y Apellido" placeholder="Nombre y Apellido">
-                                </div>
-        
-                                <div>
-                                    <label for="fnac">Fecha de nacimiento:</label>
-                                    <input id="fnac" name="fecha_nac" type="date" required>
-                                </div>
-        
-                                <div>
-                                    <label for="edad">Edad:</label>
-                                    <input id="edad" name="edad" type="number" min=1 max=100 required>
-                                </div>
-        
-                                <div>
-                                    <label for="E-mail">E-mail:</label>
-                                    <input type="email" id="EMAIL" placeholder="ejemplo@mail.com">
-                                </div>
-        
-                                <div>
-                                    <label for="Nºtel">Nº Tel.:</label>
-                                    <input type="tel" id="NºTel">
-                                </div>
-         
-                                <div>
-                                    Genero
-                                    <br>
-                                    <label for="generoM">Masculino</label>
-                                    <input type="radio" name="genero" id="generoM" value="Masculino">
-                                    <label for="generoF">Femenino</label>
-                                    <input type="radio" name="genero" id="generoF" value="Femenino">
-                                </div>
-                            </fieldset>
-                                
-                    <fieldset>
-                        <legend class="datos-adicionales">DATOS ADICIONALES</legend>
-                        <div>
-                            <label for="Fecha">Fecha</label>
-                            <input type="date" id="Fecha" placeholder="Fecha">
-                        </div>
-        
-                        <div>
-                            <label for="Hora">Hora</label>
-                            <input type="time" id="Hora" placeholder="Hora">
-                        </div>
-                        
-                        <div>
-                            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un Comentario"></textarea>
-                        </div>
-        
-                    </fieldset>
-                    
-          
-                    <fieldset>
-                       <legend class="registro">REGISTRO</legend>
-                       <div>
-                           <label for="Usuario">USUARIO</label>
-                           <input type="text" id="" placeholder="Usuario">
-                       </div>
-        
-                       <div>
-                           <label for="PASS">CONTRASEÑA</label>
-                           <input type="password" id="PASS">
-                       </div>
-        
-                       <div>
-                           <label for="PASS">CONFIRMACION CONTRASEÑA</label>
-                           <input type="password" id="PASS">
-                       </div>
-        
-                    </fieldset>
-        
-                       <div>
-                           <input id="enviar" type="submit" value="Enviar">
-                           <input id="reset" type="reset" value="Limpiar">
-                       </div>
-                    
-                </div>   
-                </form>
-            </section>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">E-mail</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
             </div>
-            
-            
 
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">Privincia</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>Buenos Aires
+                    Catamarca
+                    Chaco
+                    Chubut
+                    Córdoba
+                    Corrientes
+                    Entre Ríos
+                    Formosa
+                    Jujuy
+                    La Pampa
+                    La Rioja
+                    Mendoza
+                    Misiones
+                    Neuquén
+                    Río Negro
+                    Salta
+                    San Juan
+                    Santa Cruz
+                    Santa Fe
+                    Santiago del Estero
+                    Tierra del Fuego
+                    Tucumán</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Please provide a valid zip.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
+
+          <div class="container-fluid">
+            <div class="row">
+              <iframe width="560" style="padding: 30px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3370.0172701332676!2d-61.349541485274116!3d-32.365082250013856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ca01798b3a201b%3A0x7d3dc87ddf19ec51!2sCIRe!5e0!3m2!1ses-419!2sar!4v1665188295626!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" 
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+    
     </main>
 
     <footer class="continer-fluid">
